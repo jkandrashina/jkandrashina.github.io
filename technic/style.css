@@ -4,8 +4,7 @@ padding: 0;}
 body {
 background: #f8fafb;
 font: 14px Arial, sans-serif;
-line-height: 18px;
-padding: 5px;}
+line-height: 18px;}
 
 a {
 color: #5d5d5d;
@@ -66,7 +65,7 @@ margin: 0 auto;
 width: 935px;}
 
 #header {
-margin-top: 20px;}
+padding-top: 20px;}
 
 h1.logo, #top-nav, #contact {
 float: left;}
