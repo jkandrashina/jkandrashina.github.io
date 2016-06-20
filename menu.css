@@ -8,19 +8,19 @@ src: url(/fonts/helvetica/HelveticaNeueCyr-Light.otf);
 }
 .menu {
 font-family: 'Helvetica Neue', Sans-serif;
+line-height: 1;
+position: fixed;
+height: 100%;
 }
 .menu > .menu-title {
 background: #3498db;
 color: #fff;
 cursor: pointer;
-display: inline-block;
+display: block;
 font-size: 17.92px;
 font-weight: bold;
 text-transform: uppercase;
 padding: 16px;
-position: absolute;
-top:0;
-left: 35px;
 }
 .menu > .menu-title:before {
 content: "\f0c9";
@@ -28,44 +28,63 @@ display: inline-block;
 font-family: 'FontAwesome';
 padding: 0 10px 0 0;
 }
-.menu > .menu-title:hover {
-background: #175c8a;
-}
-.menu ul {
-background: #fff;
-border-bottom: 4px solid #175c8a;
-border-right: 4px solid #175c8a;
+
+.menu > .menu-links {
 display: none;
-list-style: none;
-padding: 16px 20px 12px;
-position: absolute;
-top: 0;
-left: 148px;
+padding: 0 30px 0;
 }
-.menu ul li {
-border-right: 1px dotted #175c8a;
+
+.menu > .menu-links h2 {
+border-bottom: 1px solid #aaa;
+color: #53545e;
 display: inline-block;
-padding-right: 14px;
+margin: 10px 0;
+padding-bottom: 3px;
 }
-.menu ul li:last-child {
-border: none;
-padding-right: 0;
-}
-.menu ul li + li {
-padding-left: 10px;
-}
-.menu ul li a {
-color: #000;
+
+.menu > .menu-links a {
+/*color: #3498db;*/
+color: #3186D7;
+display: block;
 font-size: 17.92px;
 font-weight: bold;
+margin: 10px 0;
 text-decoration: none;
+/*transition: all 0.2s linear 0.05s;*/
 }
-.menu ul li a:hover {
-color: #3498db;
+
+.menu > .menu-links a:hover {
+text-decoration: underline;
 }
-.menu-open ul {
+
+.menu-open {
+background: #fff;
+border-right: 1px solid #bebebe;
+box-shadow: 1px 0 4px #ccc;
+width: 220px;
+}
+
+.menu-open > .menu-title {
+/*box-shadow: 0 1px 4px #aaa;*/
+margin-bottom: 20px;
+padding-left: 30px;
+}
+
+.menu-open > .menu-links {
 display: block;
 }
-.menu-open > .menu-title {
-background: #175c8a;
-}
+/*
+@media screen and (max-width: 1280px) {
+	
+	.menu > .menu-title {
+	position: absolute;
+	top:0;
+	left: 0;
+	}
+	.menu ul 
+	{
+	position: absolute;
+	top:0;
+	left: 113px;
+	}
+}*/
