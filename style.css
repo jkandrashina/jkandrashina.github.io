@@ -1,0 +1,361 @@
+@font-face {
+font-family: Helvetica Neue;
+src: url(fonts/helvetica/HelveticaNeueCyr-Light.otf);
+}
+* {
+margin: 0;
+-webkit-margin-before: 0px;
+-webkit-margin-after: 0px;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+padding: 0;
+}
+body {
+background: #f1f1f1;
+color: #b5b6b8; /* #bfc0c3; */
+font-family: 'Helvetica Neue', Sans Serif;
+font-size: 100%; /* 16px */
+}
+p {
+font-size: 0.87em; /* 14px */
+line-height: 1.4;
+}
+h1, h2, h3, h4 {
+color: #53545e;
+line-height: 1.2;
+text-transform: uppercase;
+}
+h2, h3 {
+font-size: 1.12em;
+}
+.wrap {
+margin: 0 auto;
+/* width: 60%; 600px;*/
+width: 52.5em;
+max-width: 840px;
+}
+@media screen and (max-width: 50em) {
+	.wrap {
+	width: 35em;
+	}
+}
+@media screen and (max-width: 40em) {
+	.wrap {
+	width: 25em;
+	}
+}
+@media screen and (max-width: 30em) {
+	.wrap {
+	width: 15em;
+	}
+}
+.txt-fff {
+color: #fff;
+}
+/* Навигация */
+
+/* Хэдер */
+.header, .footer {
+background: #e1e1e1;
+}
+.header-block {
+background: #53545e;
+overflow: hidden;
+padding: 35px 30px;
+}
+.header-logo {
+background: url(images/logo.png) 0 50% no-repeat;
+float: left;
+padding: 0 0 0 60px;
+}
+.header-logo h1 {
+color: #fff;
+font-size: 1.88em; /* 30px */
+text-transform: uppercase;
+}
+.header-logo h1 > span, .header-txt span {
+color: #a6a7b0;
+}
+.header-txt {
+font-size: 0.75em;
+float: right;
+padding-top: 1.4em;
+}
+@media screen and (max-width: 50em) {
+	.header-logo, .header-txt {
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+	}
+	.header-logo {
+	width: 130px;
+	}
+	.header-txt {
+	width: 200px;
+	}
+}
+/* Контент */
+.content {
+background: #fff;
+padding: 1.875em 1.875em 0; /* 30px */
+}
+.a-bord {
+border-top: 1px solid #eaeaea;
+}
+
+/* Главная статья */
+.main-item {
+margin-bottom: 30px;
+}
+.article img {
+width: 100%;
+}
+.article h2, .article h3 {
+margin: 1.11em 0 0.9em 0;
+}
+.article .button {
+background: #53545e;
+color: #fff;
+display: inline-block;
+font-size: 0.87em;
+font-weight: bold;
+padding: 15px;
+text-decoration: none;
+text-transform: uppercase;
+transition: all 0.15s ease-in-out;
+}
+.article .button:hover {
+background: #fff;
+color: #53545e;
+outline: 1px solid #53545e;
+}
+.article p {
+margin-bottom: 20px;
+}
+/* Маленькие статьи */
+.small-item {
+padding-top: 30px;
+}
+.small-item-i {
+display: inline-block;
+margin-bottom: 30px;
+vertical-align: top;
+/* width: 25.125em = 402px = 47.85% */
+width: 47.8%;
+}
+.small-item-i:nth-child(2n+1) {
+margin-right: 1.875em; /* 30px */
+}
+@media screen and (max-width: 50em) {
+	.small-item-i {
+	margin-right: 0;
+	width: 100%;
+	}
+}
+/* Блок с картинками */
+.image-block {
+padding-top: 30px;
+}
+.image-block-i {
+display: inline-block;
+margin-right: 1.875em;
+margin-bottom: 1.875em;
+width: 30.357%; /* 15.937em = 255px */
+}
+.image-block :last-child  {
+margin-right: 0;
+}
+.image-block-i img {
+width: 100%;
+}
+@media screen and (max-width: 50em) {
+	.image-block-i {
+	margin-right: 0;
+	width: 100%;
+	}
+}
+
+/* Новости */
+.news .article {
+border-top: 1px solid #eaeaea;
+padding-bottom: 1.875em;
+}
+
+/* Футер */
+/* Соцсети */
+.smedia {
+background: #f1f1f1;
+overflow: hidden;
+padding: 20px 30px;
+}
+.smedia h4 {
+float: left;
+margin: 0.5em 1.2em 0.5em 0;
+}
+.smedia-icons {
+float: right;
+}
+@media screen and (max-width: 50em) {
+	.smedia-icons {
+	float: left;
+	}
+	.smedia a[class^="sm-"] {
+	margin: 0 0.625em 0.2em 0;
+	}
+}
+.smedia a[class^="sm-"] {
+background-color: #e1e1e1;
+border-radius: 50%;
+display: inline-block;
+height: 34px;
+width: 34px;
+margin-right: 0.625em;
+}
+.smedia a[class^="sm-"]:hover {
+background-color: #ade5ff;
+}
+.sm-twitter {
+background: url(images/twitter.png) no-repeat;
+}
+.sm-facebook {
+background: url(images/facebook.png) no-repeat;
+}
+.sm-rss {
+background: url(images/rss.png) no-repeat;
+}
+.sm-pinterest {
+background: url(images/pinterest.png) no-repeat;
+}
+.sm-google {
+background: url(images/google.png) no-repeat;
+}
+.sm-dribble {
+background: url(images/dribble.png) no-repeat;
+}
+.sm-linkedin {
+background: url(images/linkedin.png) no-repeat;
+}
+.sm-flickr {
+background: url(images/flickr.png) no-repeat;
+}
+ /* Ховер для иконок соцсетей */
+.sm-twitter:hover {
+background: url(images/twitter.png) left bottom no-repeat;
+}
+.sm-facebook:hover {
+background: url(images/facebook.png) left bottom no-repeat;
+}
+.sm-rss:hover {
+background: url(images/rss.png) left bottom no-repeat;
+}
+.sm-pinterest:hover {
+background: url(images/pinterest.png) left bottom no-repeat;
+}
+.sm-google:hover {
+background: url(images/google.png) left bottom no-repeat;
+}
+.sm-dribble:hover {
+background: url(images/dribble.png) left bottom no-repeat;
+}
+.sm-linkedin:hover {
+background: url(images/linkedin.png) left bottom no-repeat;
+}
+.sm-flickr:hover {
+background: url(images/flickr.png) left bottom no-repeat;
+}
+
+/* Навигация в футере */
+.footer-nav {
+background: #53545e;
+padding: 30px 30px 20px 30px;
+
+}
+.footer-nav-info {
+overflow: hidden;
+margin-bottom: 30px;
+}
+.footer-nav-txt, .footer-nav-list {
+font-size: 0.87em; /* 14px */
+line-height: 1.7em; /* 24 px */
+}
+.footer-nav-txt {
+color: #fff;
+float: left;
+margin-right: 150px;
+width: 58.3%; /* 350px;*/
+}
+.footer-nav-list {
+float: right;
+width: 17%;
+}
+.footer-nav-list li {
+background: url(images/footer_list_bg.png) left center no-repeat;
+list-style: none;
+padding-left: 12px;
+}
+.footer-nav-list li > a {
+color: #fff;
+text-decoration: none;
+}
+.footer-nav-list li > a:hover {
+text-decoration: underline;
+}
+@media screen and (max-width: 50em) {
+	.footer-nav-txt {
+	float: none;
+	margin: 0 0 1.14em 0;
+	width: 100%;
+	}
+	.footer-nav-list {
+	float: none;
+	width: 100%;
+	}
+}
+/* Копирайт */
+.copy {
+border-top: 1px solid #a6a7b0;
+color: #a6a7b0;
+padding: 20px 0 0 0;
+}
+.copy:after {
+content: '';
+clear: both;
+display: block;
+}
+.copy-info {
+float: left;
+font-size: 0.75em;
+}
+.copy-links {
+float: right;
+font-size: 0.75em;
+width: 17%;
+}
+.copy-links li {
+border-left: 1px solid #a6a7b0;
+display: inline-block;
+list-style: none;
+padding-left: 10px;
+}
+.copy-links li:first-child {
+border: none;
+padding: 0 10px 0 0;
+}
+.copy-links li  > a {
+color: #a6a7b0;
+text-decoration: none;
+transition: all 0.2s ease-in-out;
+}
+.copy-links li  > a:hover {
+color: #fff;
+}
+@media screen and (max-width: 50em) {
+	.copy-info {
+	float: none;
+	margin: 0 0 1em 0;
+	}
+	.copy-links {
+	float: none;
+	width: 100%;
+	}
+}

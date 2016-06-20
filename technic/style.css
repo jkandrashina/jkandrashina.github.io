@@ -1,0 +1,272 @@
+* {
+margin: 0;
+padding: 0;}
+body {
+background: #f8fafb;
+font: 14px Arial, sans-serif;
+line-height: 18px;
+padding: 5px;}
+
+a {
+color: #5d5d5d;
+text-decoration: none;}
+a.redlink {
+color: #9c1f1f;}
+a.underlined {
+text-decoration: underline;}
+a:hover, a.redlink:hover, a.underlined:hover {
+color: #f72727;}
+a.underlined:hover {
+text-decoration: none;}
+a img {
+border: none;}
+
+h2 {
+color: #373737;
+font-size: 15px;
+font-weight: 700;
+padding-bottom: 15px;
+text-transform: uppercase;}
+
+h3 {
+color: #707171;
+text-transform: uppercase;
+font-size: 14px;
+font-weight: 700;}
+
+p {
+padding: 8px 0;}
+
+ul.redmarker {
+margin: 5px 8px;}
+ul.redmarker li {
+background: url(images/list_bg.png) 0% 45% no-repeat;
+list-style-type: none;
+padding: 3px 0 3px 15px;
+}
+.light-grey {
+color: #a5a5a5;}
+.red {
+color: #cf3232;}
+.phone {
+font-size: 18px;
+font-weight: 700;}
+.first-item {
+padding-right: 20px;}
+.shadow-line {
+background: url(images/grey_line.png) repeat-x;
+height: 4px;
+}
+.clear {
+clear: both;}
+
+/* Хэдер */
+#wrap  {
+margin: 0 auto;
+width: 935px;}
+
+#header {
+margin-top: 20px;}
+
+h1.logo, #top-nav, #contact {
+float: left;}
+h1.logo {
+margin-right: 30px;}
+
+ul.nav-icons li, ul.user-nav li {
+display: inline-block;
+list-style-type: none;
+zoom: 1;
+*display: inline;}
+ul.nav-icons {
+margin-left: 200px;}
+.nav-icons li {
+padding-right: 15px;}
+
+ul.user-nav {
+margin-top: 20px;}
+#top-nav .user-nav li {
+padding: 8px 15px;
+border-right: 2px solid #cccece;}
+#top-nav .user-nav li:first-child {
+padding-left: 0;}
+#top-nav .user-nav li.last-child {
+border-right: none;
+padding-right: 0;}
+
+#contact {
+line-height: 1.8em;
+margin-left: 70px;}
+#contact p {
+padding: 0;}
+
+/* Меню каталога товаров */
+
+ul#catalogue-list {
+clear: left;
+padding: 15px 0;
+text-align: center;}
+#catalogue-list li {
+display: inline-block;
+list-style-type: none;
+padding: 0 8px 0 8px;
+zoom: 1;
+*display: inline;}
+#catalogue-list span {
+display: block;
+font-size: 11px;
+font-weight: bold;
+margin-top: -10px;}
+
+/* Контент */
+
+#content {
+margin-top: 15px;}
+#menu {
+min-height: 61px;}
+#menu li{
+float: left;
+list-style-type: none;}
+#menu li a {
+color: #fff;
+display: block;
+width: 231px;
+height: 61px;
+padding: 0 3px 0 0;
+font-weight: 700;
+font-size: 0.9em;
+text-transform: uppercase;}
+#menu li a:hover {
+text-decoration: underline;}
+#menu li a.arenda {
+background: url(images/arenda.png) no-repeat;
+margin-left: 2px;
+}
+#menu li a.service {
+background: url(images/service.png) no-repeat;
+}
+#menu li a.zapchasti {
+background: url(images/zapchasti.png) no-repeat;
+}
+#menu li a.finance {
+background: url(images/finance.png) no-repeat;
+padding-right: 0;
+}
+#menu li a span {
+display: block;
+padding: 22px 0 0 115px;}
+#menu li a.finance span {
+padding: 12px 0 0 100px;}
+ /* Слайдер */
+#slider {
+clear: left;
+margin: 0 0 30px 1px;
+}
+#slider img {
+border: 2px solid #dcdedf;
+border-radius: 4px;
+box-shadow: 0 2px 2px #b6b6b6;
+margin-top: -45px;
+padding: 3px;
+}
+
+#slider .slider-title{
+position: relative;
+top: 90px;
+left: 50px;
+}
+#slider .slider-title span {
+background: transparent url(images/px4slider.png) repeat 0 0;
+color: #fff;
+font-size: 20px;
+padding: 3px 7px;
+text-transform: uppercase;}
+#slider .slider-title span.last-child {
+display: block;
+width: 220px;
+margin-top: 6px;
+padding: 6px 7px;}
+
+/* Новости */
+#news {
+float: left;
+width: 195px;
+}
+#news div {
+background: url(images/news_line.png) left bottom repeat-x;
+font-size: 0.9em;
+padding: 12px 0 20px 0;}
+#news .last-item {
+background: none;}
+
+p.date {
+color: #af2c2c;
+font-weight: 700;
+padding: 5px 0;
+text-transform: uppercase;}
+
+/* О компании */
+#about {
+font-size: 0.9em;
+margin-left: 240px;}
+
+/* Партнеры */
+#partners {
+background: #f4f7f7 url(images/grey_line.png) left bottom repeat-x;
+border: 1px solid #e2e3e4;
+margin-top: 30px;
+padding: 20px 0;}
+
+#partners img {
+padding: 0 5px;}
+#partners img:first-child {
+padding-left: 35px;}
+
+/* Футер */
+#footer {
+margin-top: 20px;
+margin-bottom: 20px;
+overflow: hidden;}
+#footer .section {
+float: left;
+margin-left: 20px;
+margin-bottom: 15px;
+width: 139px;}
+#footer .section:first-child {
+margin-left: 0;}
+
+#footer .section ul {
+border-right: 1px solid #dddede;
+margin-top: 12px;
+padding-top: 5px;
+min-height: 190px;}
+#footer ul li {
+font-size: 0.9em;
+list-style-type: none;
+line-height: 35px;}
+#footer ul.last-section {
+border: none;}
+#footer .news {
+width: 130px;}
+#footer .technics {
+width: 145px;}
+
+/* Копирайт и телефоны */
+#copyright {
+float: left;}
+#copyright p, #contact-bottom p  {
+color: #9b9b9b;
+font-size: 0.9em;}
+
+#contact-bottom {
+position: relative;
+top: 45px;
+left: 110px;}
+#contact-bottom span {
+color: #8c8c8c;}
+
+
+
+
+
+

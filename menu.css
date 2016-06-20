@@ -1,0 +1,71 @@
+@font-face {
+font-family: FontAwesome;
+src: url(fonts/font-awesome/fonts/FontAwesome.otf);
+}
+@font-face {
+font-family: Helvetica Neue;
+src: url(/fonts/helvetica/HelveticaNeueCyr-Light.otf);
+}
+.menu {
+font-family: 'Helvetica Neue', Sans-serif;
+}
+.menu > .menu-title {
+background: #3498db;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+font-size: 17.92px;
+font-weight: bold;
+text-transform: uppercase;
+padding: 16px;
+position: absolute;
+top:0;
+left: 35px;
+}
+.menu > .menu-title:before {
+content: "\f0c9";
+display: inline-block;
+font-family: 'FontAwesome';
+padding: 0 10px 0 0;
+}
+.menu > .menu-title:hover {
+background: #175c8a;
+}
+.menu ul {
+background: #fff;
+border-bottom: 4px solid #175c8a;
+border-right: 4px solid #175c8a;
+display: none;
+list-style: none;
+padding: 16px 20px 12px;
+position: absolute;
+top: 0;
+left: 148px;
+}
+.menu ul li {
+border-right: 1px dotted #175c8a;
+display: inline-block;
+padding-right: 14px;
+}
+.menu ul li:last-child {
+border: none;
+padding-right: 0;
+}
+.menu ul li + li {
+padding-left: 10px;
+}
+.menu ul li a {
+color: #000;
+font-size: 17.92px;
+font-weight: bold;
+text-decoration: none;
+}
+.menu ul li a:hover {
+color: #3498db;
+}
+.menu-open ul {
+display: block;
+}
+.menu-open > .menu-title {
+background: #175c8a;
+}
