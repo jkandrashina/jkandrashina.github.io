@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="weird-cat.css" rel="stylesheet">
+    <link href="/menu.css" rel="stylesheet">
+    <title>Weird cat</title>
+  </head>
+  <body>
+    <div class="menu">
+		  <span id="menu-title" class="menu-title fa-bars">Меню</span>
+		  <div class="menu-links">
+			  <h2>Html / css</h2>
+			  <a href="/">Главная</a>
+			  <a href="/technic">Техник</a>
+			  <h2>Js</h2>
+        <a href="/canvas">Canvas</a>
+		  </div>
+	  </div>
+    <div class="wrap">
+      <h1>Графика на canvas</h1>
+      <p>Этот кот нарисован с использованием связки canvas + javascript.</p>
+      <p>На кота ушло 10 кривых Безье, 11 квадратичных кривых и несколько окружностей.</p>
+      <p>Кроме того, для кота написана функция покраски, которая позволяет менять его цвет на 
+      один из цветов палитры.</p>
+      
+      <div class="cats-block">
+        <canvas id="weird-cat" class="canvas" width="220" height="338"></canvas>
+        <div class="canvas-info">
+          <h2>Покраска кота</h2>
+          <p>Чтобы покрасить кота, нажмите на один из цветов палитры.</p>
+          <div class="palette">
+            <!-- Желтый -->
+            <input type="radio" class="palette-color" id="yellow">
+            <label for="yellow" class="color-yellow"></label>
+            <!-- Оранжевый -->
+            <input type="radio" class="palette-color" id="orange">
+            <label for="orange" class="color-orange"></label>
+            <!-- Зеленый -->
+            <input type="radio" class="palette-color" id="green">
+            <label for="green" class="color-green"></label>
+            <!-- Бирюзовый -->
+            <input type="radio" class="palette-color" id="turquoise">
+            <label for="turquoise" class="color-turquoise"></label>
+            <!-- Фиолетовый -->
+            <input type="radio" class="palette-color" id="violet">
+            <label for="violet" class="color-violet"></label>
+            <!-- Цвет морской волны -->
+            <input type="radio" class="palette-color" id="seagreen">
+            <label for="seagreen" class="color-seagreen"></label>
+            <!-- Персиковый -->
+            <input type="radio" class="palette-color" id="peach">
+            <label for="peach" class="color-peach"></label>
+            <!-- Белый -->
+            <input type="radio" class="palette-color" id="white">
+            <label for="white" class="color-white"></label>
+            <!-- Светло-фиолетовый -->
+            <input type="radio" class="palette-color" id="lightviolet">
+            <label for="lightviolet" class="color-lightviolet"></label>
+            <!-- Светло-зеленый -->
+            <input type="radio" class="palette-color" id="lightgreen">
+            <label for="lightgreen" class="color-lightgreen"></label>
+            <!-- Серый -->
+            <input type="radio" class="palette-color" id="grey">
+            <label for="grey" class="color-grey"></label>
+            <!-- Светло-бирюзовый -->
+            <input type="radio" class="palette-color" id="lightturquoise">
+            <label for="lightturquoise" class="color-lightturquoise"></label>
+            <!-- Розовый -->
+            <input type="radio" class="palette-color" id="pink">
+            <label for="pink" class="color-pink"></label>
+            <!-- Холодный синий -->
+            <input type="radio" class="palette-color" id="steelblue">
+            <label for="steelblue" class="color-steelblue"></label>
+            <!-- Светло-синий -->
+            <input type="radio" class="palette-color" id="lightblue">
+            <label for="lightblue" class="color-lightblue"></label>
+            <!-- Темно-фиолетовый -->
+            <input type="radio" class="palette-color" id="purple">
+            <label for="purple" class="color-purple"></label>
+          </div>
+          <input type="button" class="black-cat" id="blackcat" value="Вернуть черного кота">
+        </div>
+      </div>
+    </div>
+
+    <script src="weird-cat.js"></script>
+  </body>
+</html>
