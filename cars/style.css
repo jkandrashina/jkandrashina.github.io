@@ -1,0 +1,477 @@
+/* Шрифт для сайта: Arimo */
+
+@font-face {
+  font-family: 'ArimoRegular';
+  src: url('fonts/ArimoRegular.eot');
+  src: url('fonts/ArimoRegular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ArimoRegular.woff') format('woff'), 
+       url('fonts/ArimoRegular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ArimoBold';
+  src: url('fonts/ArimoBold.eot');
+  src: url('fonts/ArimoBold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ArimoBold.woff') format('woff'), 
+       url('fonts/ArimoBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ArimoItalic';
+  src: url('fonts/ArimoItalic.eot');
+  src: url('fonts/ArimoItalic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ArimoItalic.woff') format('woff'), 
+       url('fonts/ArimoItalic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ArimoBoldItalic';
+  src: url('fonts/ArimoBoldItalic.eot');
+  src: url('fonts/ArimoBoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ArimoBoldItalic.woff') format('woff'), 
+       url('fonts/ArimoBoldItalic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Основные стили:
+   заголовки, параграфы, списки.
+*/
+
+.ford-page {
+  font-family: ArimoRegular;
+  line-height: 1.3;
+}
+
+.ford-page h1 {
+  color: #005a9b;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.ford-page h2 {
+  color: #ff6600;
+  font-family: ArimoBold;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+.ford-page h2:after {
+  border-bottom: 2px solid #ff6600;
+  content: "";
+  display: block;
+  margin: 13px auto 0 auto;
+  width: 60px;
+}
+
+.ford-page h3 {
+  color: #0569b2;
+  font-family: ArimoBold;
+  font-size: 18px;
+  margin: 40px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ford-page h3:after {
+  border-bottom: 2px solid #0569b2;
+  content: "";
+  display: block;
+  margin: 12px auto 0 auto;
+  width: 60px;
+}
+
+
+/* Специфические стили для контента */
+.wrapper {
+  width: 980px;
+  min-width: 980px;
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (max-width: 991px) {
+  .wrapper {
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+  }
+}
+
+/** Светло-синий блок. Используется для примечаний **/
+.footnotes-block {
+  background: #eef3f9;
+  color: #0569b2;
+  font-family: ArimoBold;
+}
+
+.footnotes p {
+  margin-bottom: 20px;
+}
+
+/** Оверлей внутри блоков Доставка и Оплата **/
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 40px 15px;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    padding: 40px 15px 40px 25px;
+  }
+}
+
+/** Тайтлы внутри блоков Доставка и Оплата **/
+.title {
+  color: #ff6400;
+  font-size: 16px;
+  font-family: ArimoBold;
+  margin-bottom: 14px;
+  margin-left: 40px;
+}
+
+/** Жирный шрифт. Через font-weight не задается,
+    в папке шрифтов для этого есть специальный шрифт ArimoBold **/
+.txt-bold {
+  font-family: ArimoBold;
+}
+
+/** Оранжевый шрифт для выделения важных частей текста **/
+.important {
+  color: #ff6600;
+  font-family: ArimoBold;
+  font-size: 16px;
+}
+
+/** Ссылка для совершения действия **/
+.action-link {
+  color: #ff6400;
+  border-bottom: 2px solid;
+  display: inline-block;
+  font-family: ArimoBold;
+  font-size: 18px;
+}
+
+.action-link:hover {
+  color: #fe9b5b;
+  text-decoration: none;
+}
+/** Очищает плавающие блоки **/
+.clear {
+  clear: both;  
+}
+
+/* Блоки страницы */
+/** Доставка по Екб **/
+.delivery-block {
+  background-image: url(images/ford_background_top.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.delivery-block > .wrapper > .overlay > .row {
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .delivery-block > .wrapper > .overlay > .row {
+  margin-bottom: 0;
+  }
+}
+
+.delivery-points {
+  margin-left: 115px;
+}
+
+@media (max-width: 768px) {
+  .delivery-points,
+  .сourier-delivery  {
+    margin-left: 0;
+    padding: 0 0 20px 20px;
+  }
+}
+
+.delivery-points p {
+  background: url(images/location_arrow.png) 0 50% no-repeat;
+  padding-left: 40px;
+}
+
+.delivery-points .points-location {
+  font-size: 15px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.delivery-points .points-location li {
+  background: url(images/pin.png) 0 50% no-repeat;
+  padding: 5px 0 5px 39px;
+}
+
+.сourier-delivery .time,
+.сourier-delivery .address,
+.сourier-delivery .payment {
+  margin-bottom: 20px;
+}  
+
+.сourier-delivery .time {
+  background: url(images/calendar.png) 0 50% no-repeat;
+  padding-left: 40px;
+}
+
+.сourier-delivery .address {
+  background: url(images/pin.png) 0 50% no-repeat;
+  padding-left: 37px;
+}
+
+.сourier-delivery .payment {
+  background: url(images/cash_receiving.png) 0 50% no-repeat;
+  padding-left: 40px;
+}
+
+.delivery-cost {
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .delivery-cost {
+    text-align: left;
+  }
+}
+
+/** Яндекс карта пунктов выдачи **/
+.map-block {
+  background: #fff;
+  padding: 35px 0;
+}
+
+.delivery-map {
+  padding: 0;
+}
+
+.delivery-map img {
+  width: 100%;
+}
+
+/** Примечания по доставке **/
+.delivery-terms {
+  padding: 66px 0 56px 0;
+}
+
+.delivery-terms .terms,
+.delivery-terms .post-of-russia,
+.delivery-terms .transport-company {
+  padding-left: 80px;
+  margin-bottom: 0;
+}
+
+.delivery-terms .terms {
+  background: url(images/calendar_terms.png) 0 0 no-repeat;
+  padding-bottom: 27px;
+}
+
+.delivery-terms .post-of-russia {
+  background: url(images/hand_cash.png) 0 0 no-repeat;
+  padding-bottom: 27px;
+}
+.delivery-terms .transport-company {
+  background: url(images/track.png) 0 50% no-repeat;
+  padding-bottom: 14px;
+}
+
+/** Оплата **/
+.payment-block {
+  background-image: url(images/ford_background_middle.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+  margin-top: 60px;
+}
+
+.payment-options,
+.sberbank-card-payment {
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+.payment-options {
+  margin-left: 120px;
+}
+
+.sberbank-card-payment {
+  margin-left: 65px;
+}
+
+@media (max-width: 768px) {
+  .payment-options,
+  .sberbank-card-payment  {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+.payment-options .payment-options-list {
+  font-size: 14px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.payment-options .payment-options-list li {
+  padding: 10px 0 10px 55px;
+}
+
+.payment-options-list .cash {
+  background: url(images/coins_stack.png) 0 50% no-repeat;
+}
+
+.payment-options-list .credit-card {
+  background: url(images/credit_cards.png) 0 50% no-repeat;
+}
+
+.payment-options-list .bank {
+  background: url(images/bank.png) 0 50% no-repeat;
+}
+
+.payment-options-list .online {
+  background: url(images/online_pay.png) 0 50% no-repeat;
+}
+
+.payment-options-list .by-account {
+  background: url(images/by_account.png) 0 50% no-repeat;
+}
+
+.sberbank-card-payment .title {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.sberbank-card-payment .card-number:before {
+  background: #ff6600;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  margin-right: 14px;
+  width: 6px;
+  height: 6px;
+}
+
+.sberbank-card-payment .card-number + p {
+  margin-left: 20px;
+}
+
+.credit-cards-payment,
+.payment-details {
+  margin-top: 40px;
+}
+
+.credit-cards-payment {
+  margin-left: 120px;
+}
+
+.payment-details {
+  margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .credit-cards-payment,
+  .payment-details {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+.credit-card-list {
+  padding-left: 30px;
+}
+
+.credit-card-list li{
+  color: #ff6600;
+  font-family: ArimoBold;
+  font-size: 16px;
+  margin: 40px 0;
+  padding-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .credit-card-list {
+    margin-bottom: 0;
+  }
+  .credit-card-list li {
+    margin: 10px 0;
+  }
+}
+
+/** Гарантии **/
+.guarantee-block {
+  padding: 65px 0 40px 0;
+}
+
+.guarantee-block .privacy-guarantee,
+.guarantee-block .important,
+.guarantee-block p {
+  padding-left: 80px;
+}
+
+.guarantee-block .privacy-guarantee {
+  background: url(images/guarantee.png) 0 0 no-repeat;
+}
+
+.guarantee-block .important {
+  background: url(images/inspection.png) 0 0 no-repeat;
+  margin-top: 35px;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+}
+
+/** Правила использования дисконтных карт **/
+.discount-card-terms-of-use {
+  margin-bottom: 35px;
+}
+
+.discount-card-terms-of-use .number {
+  background: #ff6400;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 26px auto;
+  position: relative;
+  width: 87px;
+  height: 87px;
+}
+
+.number > span {
+  position: absolute;
+  top: 12px;
+  left: 27px;
+  color: #fff;
+  font-family: ArimoItalic;
+  font-size: 48px;
+}
+
+.terms-of-use-list {
+  margin-bottom: 30px;
+}
+
+.discount-card-terms-of-use .discount-img {
+  border: 3px solid #ff6400;
+  width: 100%;
+}
+
+.show-all {
+  text-align: center;
+}
