@@ -167,8 +167,14 @@
 
 .action-link:hover {
   color: #fe9b5b;
+}
+
+.action-link:hover,
+.action-link:focus,
+.action-link:visited {
   text-decoration: none;
 }
+
 /** Очищает плавающие блоки **/
 .clear {
   clear: both;  
